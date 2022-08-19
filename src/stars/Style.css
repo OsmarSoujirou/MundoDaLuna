@@ -1,0 +1,123 @@
+.container{
+  width: 100%;
+  height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+.stars{
+	position: relative;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 94vw 99vh white,
+	80vw 9vh white,
+	72vw 19vh white,
+	66vw 35vh white,
+	59vw 79vh white,
+	27vw 13vh white,
+	32vw 69vh white,
+	99vw 21vh white,
+	19vw 77vh white,
+	1vw 19vh white,
+	89vw 12vh white,
+	19vw 89vh white,
+	64vw 32vh white,
+	23vw 66vh white,
+	41vw 74vh white,
+	30vw 95vh white,
+	23vw 11vh white,
+	74vw 52vh white,
+	9vw 23vh white;
+	animation: anim-stars 30s linear infinite;
+}
+.stars::after{
+	position: absolute;
+  content: " ";  
+  top: 100vh;
+  width: 3px;
+	height: 3px;
+  border-radius: 50%;
+	box-shadow: 94vw 99vh white,
+	80vw 9vh white,
+	72vw 19vh white,
+	66vw 35vh white,
+	59vw 79vh white,
+	27vw 13vh white,
+	32vw 69vh white,
+	99vw 21vh white,
+	19vw 77vh white,
+	1vw 19vh white,
+	89vw 12vh white,
+	19vw 89vh white,
+	64vw 32vh white,
+	23vw 66vh white,
+	41vw 74vh white,
+	30vw 95vh white,
+	23vw 11vh white,
+	74vw 52vh white,
+	9vw 23vh white;	
+}
+.stars2{
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 64vw 99vh white,
+	10vw 79vh white,
+	52vw 59vh white,
+	86vw 35vh white,
+	49vw 19vh white,
+	17vw 53vh white,
+	92vw 99vh white,
+	39vw 81vh white,
+	79vw 47vh white,
+	2vw 69vh white,
+	69vw 22vh white,
+	89vw 39vh white,
+	14vw 52vh white,
+	43vw 76vh white,
+	61vw 44vh white,
+	70vw 85vh white,
+	83vw 61vh white,
+	24vw 22vh white,
+	1vw 23vh white;
+  animation: anim-stars 50s linear infinite;
+}
+
+.stars2::after{
+  content: " ";
+  position: absolute;
+  top: 100vh;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 64vw 99vh white,
+	10vw 79vh white,
+	52vw 59vh white,
+	86vw 35vh white,
+	49vw 19vh white,
+	17vw 53vh white,
+	92vw 99vh white,
+	39vw 81vh white,
+	79vw 47vh white,
+	2vw 69vh white,
+	69vw 22vh white,
+	89vw 39vh white,
+	14vw 52vh white,
+	43vw 76vh white,
+	61vw 44vh white,
+	70vw 85vh white,
+	83vw 61vh white,
+	24vw 22vh white,
+	1vw 23vh white;
+}
+@keyframes anim-stars {
+	from {
+			transform: translateY(0vw);
+	}
+	to {
+			transform: translateY(-100vh);
+	}
+}

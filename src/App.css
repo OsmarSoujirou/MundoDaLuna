@@ -1,0 +1,13 @@
+.App {
+  min-height: 100vh;
+    min-height: stretch;
+    min-height: -webkit-fill-available;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}

@@ -1,0 +1,117 @@
+#drawer-toggle {
+  position: absolute;
+  opacity: 0;
+}
+
+/* drawer menu pane - note the 0px width */
+
+#drawer {
+  position: fixed;
+  width: 300px;
+  color: #000;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  background: #fbf2ff;
+  overflow-x: hidden;
+  z-index: 1000;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: row;
+}
+
+#drawer-toggle:checked ~ #drawer {
+  right: 0;
+}
+
+#drawer-toggle:checked ~ .luna,
+#drawer-toggle:checked ~ .header {
+  margin-right: 300px;
+}
+
+.formChaRifaLuna,
+.posCheckout {
+  min-width: 300px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  margin-left: 0px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.luaIcon {
+  height: 2rem;
+}
+.title {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  font-weight: 800;
+  color: #5d396c;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.itemContainerCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.itemContainerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.itemEsquerda {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.itemDireita {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 800;
+  color: #9e4fbf;
+  text-align: end;
+  font-size: 0.8rem;
+}
+
+.itemContainerResume {
+  display: flex;
+  flex-direction: column;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.formControlLabel {
+  font-size: 0.8rem !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen' !important;
+}
+
+.activestep {
+  margin-left: -300px;
+}
+
+.qrcode {
+  border: solid;
+  border-color: white;
+  border-width: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+}

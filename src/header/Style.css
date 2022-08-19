@@ -1,0 +1,30 @@
+.logo {
+  height: 90px;
+  margin-top: 5px;
+  transform:translatey(0px);-webkit-animation:float 6s ease-in-out infinite;animation:float 6s ease-in-out infinite
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  -webkit-transition: .5s ease-in-out; 
+  -moz-transition: .5s ease-in-out; 
+  -o-transition: .5s ease-in-out; 
+  transition: .5s ease-in-out; 
+}
+
+@keyframes logoMundoLuna {
+  from   {
+    margin-top: 25px;
+  }
+  to {
+    margin-top: 5px;
+  }
+}
+@-webkit-keyframes float{0%{transform:translatey(0px)}50%{transform:translatey(-20px)}100%{transform:translatey(0px)}}
+@keyframes float{0%{transform:translatey(0px)}50%{transform:translatey(-20px)}100%{transform:translatey(0px)}}
+@keyframes aparecer {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}

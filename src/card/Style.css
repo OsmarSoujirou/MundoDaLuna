@@ -1,0 +1,71 @@
+.card {
+  width: 177px;
+  height: 291px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+.div_pts {
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  height: 46px;
+  padding-right: 13px;
+}
+.icon {
+  height: 140px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.div_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  margin-bottom: 3px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.div_text {
+      max-height: 45px;
+      overflow: hidden;
+      font-size: 0.65rem;
+      text-align: center;
+      white-space: pre-wrap;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 0px 15px;
+}
+.cardActivated {
+  animation: pulse 0.5s infinite;
+  animation-direction: alternate;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -webkit-filter: brightness(0%);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    -webkit-filter: brightness(10%);
+  }
+}
+@keyframes pulse {
+
+  0% {
+    transform: translateY(4px);
+    -webkit-filter: brightness(100%);
+  }
+  100% {
+    transform: translateY(-4px);
+    -webkit-filter: brightness(105%);
+  }
+}

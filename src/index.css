@@ -1,0 +1,78 @@
+html {
+  height: stretch;
+  height: -webkit-fill-available;
+  overflow-x:hidden;
+}
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7b14c2 #bc00fa12;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #bc00fa12;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7b14c2;
+  border-radius: 2px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #120727;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: stretch;
+  min-height: -webkit-fill-available;
+}
+#root {
+    width: 100vw;
+    min-height: 100vh;
+    min-height: stretch;
+    min-height: -webkit-fill-available;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes changerColor {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.element-with-the-scrollbar {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+* { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  -o-box-sizing: border-box; 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  -webkit-text-size-adjust: none; 
+  } 
